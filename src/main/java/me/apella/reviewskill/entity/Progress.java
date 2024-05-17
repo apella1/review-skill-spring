@@ -3,8 +3,10 @@ package me.apella.reviewskill.entity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 @Entity
+@Document(collection = "progress")
 @NoArgsConstructor
 @AllArgsConstructor
 public class Progress {
